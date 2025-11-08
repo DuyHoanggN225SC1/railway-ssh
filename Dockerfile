@@ -15,7 +15,7 @@ RUN apt update && apt install -y \
 # -----------------------------
 # Create user 'user' with sudo
 # -----------------------------
-RUN useradd -m user && echo "user:password" | chpasswd && adduser user sudo
+RUN useradd -m trthaodev && echo "trthaodev:thaodev@" | chpasswd && adduser trthaodev sudo
 
 # -----------------------------
 # Configure SSH

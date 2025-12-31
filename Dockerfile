@@ -12,7 +12,7 @@ RUN apt update && apt install -y \
     python3 \
     && mkdir /var/run/sshd
 # -----------------------------
-# Create user 'user' with sudo
+# Create user with sudo
 # -----------------------------
 RUN useradd -m xduyhoangg && echo "xduyhoangg:hoang1234" | chpasswd && adduser xduyhoangg sudo
 # -----------------------------

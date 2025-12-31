@@ -12,7 +12,8 @@ echo "=== Thông tin SSH của bạn ==="
 TUNNEL_INFO=$(tail -n 10 serveo.log | grep -i "forwarding\|tcp" | head -1)
 if [ -n "$TUNNEL_INFO" ]; then
   echo "Kết nối SSH qua: my-ssh-tunnel.serveo.net:22"
-  echo "Ví dụ: ssh -J serveo.net user@my-ssh-tunnel"
+  echo "Ví dụ: ssh -J serveo.net xduyhoangg@my-ssh-tunnel"
+  echo "Mật khẩu: hoang1234"
 else
   echo "⚠️ Không lấy được tunnel, kiểm tra log serveo.log."
   echo "Hoặc xem trực tiếp: tail -f serveo.log"
